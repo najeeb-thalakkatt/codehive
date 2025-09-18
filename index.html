@@ -1,46 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for proper HTML5 document structure -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to CodeHive</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <meta name="description" content="CodeHive - Your premier destination for coding tutorials, resources, and community-driven learning. Join thousands of developers improving their skills.">
+    <meta name="keywords" content="coding, programming, tutorials, web development, software engineering, learning, community">
+    <meta name="author" content="CodeHive Team">
+    
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="CodeHive - Learn to Code with the Community">
+    <meta property="og:description" content="Join CodeHive's vibrant community of developers. Access comprehensive tutorials, coding challenges, and expert guidance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://najeeb-thalakkatt.github.io/codehive/">
+    
+    <!-- Page title -->
+    <title>CodeHive - Learn to Code with the Community</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍯</text></svg>">
+    
+    <!-- External stylesheets - Material Design CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Preconnect to Google Fonts for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 <body>
-    <header>
-        <h1>Welcome to CodeHive</h1>
-    </header>
-    <main>
-        <p>This is a dummy single-page website hosted on GitHub Pages.</p>
-        <p>Stay tuned for more amazing content!</p>
+    <!-- Material Design Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="navbar-container">
+            <!-- Brand/Logo -->
+            <a href="#home" class="navbar-brand" aria-label="CodeHive Home">
+                <span class="material-icons" aria-hidden="true">code</span>
+                CodeHive
+            </a>
+            
+            <!-- Navigation Menu -->
+            <ul class="navbar-nav" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#features" role="menuitem">Features</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Navigation Toggle -->
+            <button class="navbar-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navbar-nav">
+                <span class="material-icons" aria-hidden="true">menu</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Material Design Hero Section -->
+    <section id="home" class="hero" role="banner">
+        <div class="hero-container">
+            <!-- Hero content with meaningful text -->
+            <h1 class="md-display-large hero-title">
+                Welcome to CodeHive
+            </h1>
+            <p class="md-headline-medium hero-subtitle">
+                Your premier destination for learning to code, sharing knowledge, and building amazing projects with a vibrant community of developers.
+            </p>
+            
+            <!-- Call-to-action buttons -->
+            <div class="hero-actions">
+                <a href="#features" class="md-button md-button-filled" role="button" aria-label="Explore CodeHive features">
+                    <span class="material-icons" aria-hidden="true">explore</span>
+                    Get Started
+                </a>
+                <a href="#about" class="md-button md-button-outlined" role="button" aria-label="Learn more about CodeHive">
+                    <span class="material-icons" aria-hidden="true">info</span>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="main-content" role="main">
+        <div class="container">
+            
+            <!-- Features Section -->
+            <section id="features" class="features" aria-labelledby="features-title">
+                <div class="section-header">
+                    <h2 id="features-title" class="md-headline-large section-title">
+                        Why Choose CodeHive?
+                    </h2>
+                    <p class="md-body-large section-subtitle">
+                        Discover the tools and resources that make CodeHive the perfect platform for your coding journey, whether you're a beginner or an experienced developer.
+                    </p>
+                </div>
+                
+                <!-- Features Grid -->
+                <div class="features-grid">
+                    <!-- Feature 1: Interactive Tutorials -->
+                    <article class="md-card feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <span class="material-icons">school</span>
+                        </div>
+                        <h3 class="md-headline-medium feature-title">Interactive Tutorials</h3>
+                        <p class="md-body-large feature-description">
+                            Learn coding through hands-on, interactive tutorials covering everything from web development basics to advanced software engineering concepts.
+                        </p>
+                    </article>
+                    
+                    <!-- Feature 2: Community Support -->
+                    <article class="md-card feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <span class="material-icons">people</span>
+                        </div>
+                        <h3 class="md-headline-medium feature-title">Community Support</h3>
+                        <p class="md-body-large feature-description">
+                            Join thousands of developers in our supportive community. Get help, share knowledge, and collaborate on exciting projects together.
+                        </p>
+                    </article>
+                    
+                    <!-- Feature 3: Real Projects -->
+                    <article class="md-card feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <span class="material-icons">build</span>
+                        </div>
+                        <h3 class="md-headline-medium feature-title">Real-World Projects</h3>
+                        <p class="md-body-large feature-description">
+                            Build your portfolio with real-world projects that showcase your skills to potential employers and demonstrate your coding expertise.
+                        </p>
+                    </article>
+                    
+                    <!-- Feature 4: Expert Guidance -->
+                    <article class="md-card feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <span class="material-icons">stars</span>
+                        </div>
+                        <h3 class="md-headline-medium feature-title">Expert Guidance</h3>
+                        <p class="md-body-large feature-description">
+                            Learn from industry experts and experienced developers who provide mentorship, code reviews, and career guidance.
+                        </p>
+                    </article>
+                    
+                    <!-- Feature 5: Flexible Learning -->
+                    <article class="md-card feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <span class="material-icons">schedule</span>
+                        </div>
+                        <h3 class="md-headline-medium feature-title">Flexible Learning</h3>
+                        <p class="md-body-large feature-description">
+                            Study at your own pace with 24/7 access to resources, allowing you to balance learning with work and personal commitments.
+                        </p>
+                    </article>
+                    
+                    <!-- Feature 6: Modern Tech Stack -->
+                    <article class="md-card feature-card">
+                        <div class="feature-icon" aria-hidden="true">
+                            <span class="material-icons">devices</span>
+                        </div>
+                        <h3 class="md-headline-medium feature-title">Modern Tech Stack</h3>
+                        <p class="md-body-large feature-description">
+                            Stay current with the latest technologies, frameworks, and development tools that are in demand in today's job market.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="about" aria-labelledby="about-title">
+                <div class="section-header">
+                    <h2 id="about-title" class="md-headline-large section-title">
+                        About CodeHive
+                    </h2>
+                    <p class="md-body-large section-subtitle">
+                        CodeHive was founded with a simple mission: to make high-quality coding education accessible to everyone, everywhere. We believe that learning to code should be engaging, practical, and community-driven.
+                    </p>
+                </div>
+                
+                <!-- About Content -->
+                <div class="md-card">
+                    <div class="md-body-large">
+                        <p style="margin-bottom: var(--md-spacing-md);">
+                            Our platform combines the best of traditional computer science education with modern, industry-relevant practices. Whether you're taking your first steps into programming or looking to advance your career as a software engineer, CodeHive provides the resources, community, and guidance you need to succeed.
+                        </p>
+                        <p style="margin-bottom: var(--md-spacing-md);">
+                            With over <strong>50,000 active learners</strong> and <strong>1,000+ expert mentors</strong>, CodeHive has become a trusted destination for developers worldwide. Our curriculum is constantly updated to reflect the latest industry trends and technologies.
+                        </p>
+                        <p>
+                            Join us today and become part of a community that's passionate about coding, learning, and building the future of technology together.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2025 CodeHive. All rights reserved.</p>
+
+    <!-- Material Design Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Company Information -->
+                <div class="footer-section">
+                    <h3>CodeHive</h3>
+                    <p>Empowering developers worldwide through quality education, community support, and hands-on learning experiences.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Learning Resources -->
+                <div class="footer-section">
+                    <h3>Learning</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" aria-label="Web Development Tutorials">Web Development</a></li>
+                        <li><a href="#" aria-label="Mobile App Development">Mobile Development</a></li>
+                        <li><a href="#" aria-label="Data Science Courses">Data Science</a></li>
+                        <li><a href="#" aria-label="DevOps Training">DevOps</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Community & Support -->
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" aria-label="Discord Community">Discord</a></li>
+                        <li><a href="#" aria-label="GitHub Repository">GitHub</a></li>
+                        <li><a href="#" aria-label="Help Center">Help Center</a></li>
+                        <li><a href="#" aria-label="Contact Support">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 CodeHive. All rights reserved. Built with ❤️ for the developer community.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- External JavaScript - Material Design functionality -->
+    <script src="scripts.js"></script>
+    
+    <!-- Hidden contact section for future expansion -->
+    <section id="contact" style="display: none;" aria-labelledby="contact-title">
+        <div class="section-header">
+            <h2 id="contact-title" class="md-headline-large section-title">Get In Touch</h2>
+            <p class="md-body-large section-subtitle">
+                Have questions or want to learn more? We'd love to hear from you!
+            </p>
+        </div>
+    </section>
 </body>
 </html>
