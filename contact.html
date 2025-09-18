@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CodeHive</title>
+    <meta name="description" content="Get in touch with CodeHive for your development needs. Contact us for project inquiries, consultations, or to join our team.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">CodeHive</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Page Header -->
+        <section class="page-header text-center mb-4">
+            <h1>Get In Touch</h1>
+            <p class="lead">Ready to start your next project? Let's discuss how we can help bring your ideas to life.</p>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h2>Send Us a Message</h2>
+                                <p style="margin: 0; color: var(--text-secondary);">Fill out the form below and we'll get back to you within 24 hours</p>
+                            </div>
+                            <div class="card-content">
+                                <form id="contactForm" onsubmit="handleContactFormSubmit(event)">
+                                    <div class="row">
+                                        <div class="col col-6">
+                                            <div class="form-group">
+                                                <label for="firstName" class="form-label">First Name *</label>
+                                                <input type="text" id="firstName" name="firstName" class="form-input" required placeholder="Enter your first name">
+                                            </div>
+                                        </div>
+                                        <div class="col col-6">
+                                            <div class="form-group">
+                                                <label for="lastName" class="form-label">Last Name *</label>
+                                                <input type="text" id="lastName" name="lastName" class="form-input" required placeholder="Enter your last name">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col col-6">
+                                            <div class="form-group">
+                                                <label for="email" class="form-label">Email Address *</label>
+                                                <input type="email" id="email" name="email" class="form-input" required placeholder="your.email@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="col col-6">
+                                            <div class="form-group">
+                                                <label for="phone" class="form-label">Phone Number</label>
+                                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="+1 (555) 123-4567">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="company" class="form-label">Company/Organization</label>
+                                        <input type="text" id="company" name="company" class="form-input" placeholder="Your company name">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="projectType" class="form-label">Project Type *</label>
+                                        <select id="projectType" name="projectType" class="form-select" required>
+                                            <option value="">Select a project type</option>
+                                            <option value="web-development">Web Development</option>
+                                            <option value="mobile-development">Mobile Development</option>
+                                            <option value="cloud-solutions">Cloud Solutions</option>
+                                            <option value="consulting">Technical Consulting</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="budget" class="form-label">Project Budget</label>
+                                        <select id="budget" name="budget" class="form-select">
+                                            <option value="">Select budget range</option>
+                                            <option value="under-10k">Under $10,000</option>
+                                            <option value="10k-25k">$10,000 - $25,000</option>
+                                            <option value="25k-50k">$25,000 - $50,000</option>
+                                            <option value="50k-100k">$50,000 - $100,000</option>
+                                            <option value="over-100k">Over $100,000</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="timeline" class="form-label">Project Timeline</label>
+                                        <select id="timeline" name="timeline" class="form-select">
+                                            <option value="">Select timeline</option>
+                                            <option value="asap">ASAP</option>
+                                            <option value="1-month">Within 1 month</option>
+                                            <option value="2-3-months">2-3 months</option>
+                                            <option value="3-6-months">3-6 months</option>
+                                            <option value="6-months-plus">6+ months</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Project Description *</label>
+                                        <textarea id="message" name="message" class="form-textarea" rows="6" required placeholder="Please describe your project requirements, goals, and any specific features you need..."></textarea>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox">
+                                            <span class="checkbox-text">I'd like to receive updates about CodeHive services and industry insights</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Information Sidebar -->
+                    <div class="col col-4">
+                        <div class="contact-info">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h3>Contact Information</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">📧</div>
+                                        <div class="contact-details">
+                                            <strong>Email</strong>
+                                            <p><a href="mailto:hello@codehive.dev">hello@codehive.dev</a></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">📞</div>
+                                        <div class="contact-details">
+                                            <strong>Phone</strong>
+                                            <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">📍</div>
+                                        <div class="contact-details">
+                                            <strong>Address</strong>
+                                            <p>123 Innovation Drive<br>Tech District, CA 94105<br>United States</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contact-item">
+                                        <div class="contact-icon">🕒</div>
+                                        <div class="contact-details">
+                                            <strong>Business Hours</strong>
+                                            <p>Monday - Friday<br>9:00 AM - 6:00 PM PST</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Quick Links -->
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div class="quick-links">
+                                        <a href="services.html" class="quick-link">
+                                            <span class="link-icon">🌐</span>
+                                            <span>View Our Services</span>
+                                        </a>
+                                        <a href="about.html" class="quick-link">
+                                            <span class="link-icon">👥</span>
+                                            <span>Meet Our Team</span>
+                                        </a>
+                                        <a href="#" class="quick-link">
+                                            <span class="link-icon">📚</span>
+                                            <span>View Portfolio</span>
+                                        </a>
+                                        <a href="#" class="quick-link">
+                                            <span class="link-icon">💼</span>
+                                            <span>Career Opportunities</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Social Media -->
+                            <div class="card mt-3">
+                                <div class="card-header">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <div class="card-content">
+                                    <div class="social-links">
+                                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
+                                        <a href="#" class="social-link" aria-label="GitHub">💻</a>
+                                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq mt-4">
+            <div class="container">
+                <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+                <div class="row">
+                    <div class="col col-6">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>How long does a typical project take?</h4>
+                                <p>Project timelines vary based on complexity and scope. Simple websites typically take 2-4 weeks, while complex applications can take 3-6 months. We'll provide a detailed timeline during our initial consultation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-6">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Do you offer ongoing support?</h4>
+                                <p>Yes! We provide comprehensive post-launch support including maintenance, updates, hosting assistance, and feature enhancements. Our support packages are tailored to your specific needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-6">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>What's your development process?</h4>
+                                <p>We follow an agile methodology with regular check-ins, milestone reviews, and continuous feedback. This ensures transparency and allows for adjustments throughout the development process.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-6">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>Can you work with our existing team?</h4>
+                                <p>Absolutely! We're experienced in collaborating with in-house teams, providing additional expertise, training, or handling specific project components while integrating seamlessly with your workflow.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta mt-4">
+            <div class="container">
+                <div class="card" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white;">
+                    <div class="card-content text-center">
+                        <h2 style="color: white; margin-bottom: 16px;">Ready to Start Your Project?</h2>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 32px;">
+                            Don't wait! The sooner we start, the sooner you'll see results. Get your free consultation today.
+                        </p>
+                        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                            <a href="#contactForm" class="btn btn-accent" onclick="document.getElementById('firstName').focus()">Fill Out Form</a>
+                            <a href="tel:+15551234567" class="btn btn-secondary" style="color: white; border-color: white;">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CodeHive. All rights reserved. | Built with ❤️ using Material Design</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <style>
+        .page-header {
+            padding: 40px 0;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+
+        .lead {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Contact Information Styles */
+        .contact-info {
+            position: sticky;
+            top: 80px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid var(--divider);
+        }
+
+        .contact-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 16px;
+            margin-top: 4px;
+        }
+
+        .contact-details strong {
+            display: block;
+            color: var(--text-primary);
+            margin-bottom: 4px;
+        }
+
+        .contact-details p {
+            margin: 0;
+            color: var(--text-secondary);
+        }
+
+        .contact-details a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .quick-link {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background-color: var(--background);
+            border-radius: 4px;
+            text-decoration: none;
+            color: var(--text-primary);
+            transition: background-color 0.2s ease;
+        }
+
+        .quick-link:hover {
+            background-color: var(--primary-light);
+            color: var(--primary-color);
+        }
+
+        .link-icon {
+            margin-right: 12px;
+            font-size: 1.2rem;
+        }
+
+        /* Social Links */
+        .social-links {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background-color: var(--background);
+            border-radius: 50%;
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: var(--elevation-2);
+        }
+
+        /* Checkbox Styles */
+        .checkbox-label {
+            display: flex;
+            align-items: flex-start;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        .form-checkbox {
+            margin-right: 12px;
+            margin-top: 2px;
+        }
+
+        .checkbox-text {
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+
+        /* Form Enhancements */
+        .form-textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-select {
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6,9 12,15 18,9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 16px;
+            padding-right: 40px;
+            appearance: none;
+        }
+
+        /* FAQ Styles */
+        .faq .card {
+            height: 100%;
+        }
+
+        .faq h4 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .contact-info {
+                position: static;
+                margin-top: 32px;
+            }
+
+            .social-links {
+                justify-content: flex-start;
+            }
+
+            .quick-links {
+                gap: 8px;
+            }
+
+            .quick-link {
+                padding: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .contact-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contact-icon {
+                margin-right: 0;
+                margin-bottom: 8px;
+                margin-top: 0;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+        }
+    </style>
+</body>
+</html>
