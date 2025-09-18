@@ -3,44 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to CodeHive</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>CodeHive - Your Hub for Code Excellence</title>
+    <meta name="description" content="CodeHive is your premier destination for code collaboration, learning, and innovation. Join our community of developers and take your coding skills to the next level.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏗️</text></svg>">
 </head>
 <body>
-    <header>
-        <h1>Welcome to CodeHive</h1>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">CodeHive</a>
+            <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <p>This is a dummy single-page website hosted on GitHub Pages.</p>
-        <p>Stay tuned for more amazing content!</p>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Welcome to CodeHive</h1>
+                <p>Your premier destination for code collaboration, learning, and innovation</p>
+                <div class="hero-actions">
+                    <a href="services.html" class="btn btn-accent">Explore Services</a>
+                    <a href="contact.html" class="btn btn-secondary">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="text-center mb-4">Why Choose CodeHive?</h2>
+                <div class="row">
+                    <div class="col col-4">
+                        <div class="card">
+                            <div class="card-content text-center">
+                                <div style="font-size: 3rem; margin-bottom: 16px;">🚀</div>
+                                <h3>Fast Development</h3>
+                                <p>Accelerate your development process with our cutting-edge tools and methodologies. Build faster, deploy quicker, and iterate with confidence.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="card">
+                            <div class="card-content text-center">
+                                <div style="font-size: 3rem; margin-bottom: 16px;">🔧</div>
+                                <h3>Professional Tools</h3>
+                                <p>Access enterprise-grade development tools and frameworks. From code editors to deployment pipelines, we provide everything you need.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-4">
+                        <div class="card">
+                            <div class="card-content text-center">
+                                <div style="font-size: 3rem; margin-bottom: 16px;">🤝</div>
+                                <h3>Community Support</h3>
+                                <p>Join a vibrant community of developers. Share knowledge, collaborate on projects, and grow together in a supportive environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Preview -->
+        <section class="services-preview mt-4">
+            <div class="container">
+                <h2 class="text-center mb-4">Our Core Services</h2>
+                <div class="row">
+                    <div class="col col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Web Development</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Create stunning, responsive websites with modern frameworks and technologies. From single-page applications to complex web platforms.</p>
+                                <ul style="color: var(--text-secondary); margin: 16px 0;">
+                                    <li>React, Vue, Angular applications</li>
+                                    <li>Node.js backend development</li>
+                                    <li>Progressive Web Apps (PWA)</li>
+                                    <li>E-commerce solutions</li>
+                                </ul>
+                            </div>
+                            <div class="card-actions">
+                                <a href="services.html#web-development" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-6">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3>Mobile Development</h3>
+                            </div>
+                            <div class="card-content">
+                                <p>Build native and cross-platform mobile applications that engage users and drive business growth across iOS and Android platforms.</p>
+                                <ul style="color: var(--text-secondary); margin: 16px 0;">
+                                    <li>React Native apps</li>
+                                    <li>Flutter development</li>
+                                    <li>iOS & Android native</li>
+                                    <li>App Store optimization</li>
+                                </ul>
+                            </div>
+                            <div class="card-actions">
+                                <a href="services.html#mobile-development" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta mt-4">
+            <div class="container">
+                <div class="card" style="background: linear-gradient(135deg, var(--primary-color), var(--primary-dark)); color: white;">
+                    <div class="card-content text-center">
+                        <h2 style="color: white; margin-bottom: 16px;">Ready to Start Your Next Project?</h2>
+                        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 32px;">
+                            Join thousands of developers who trust CodeHive for their development needs. 
+                            Get started today and experience the difference.
+                        </p>
+                        <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                            <a href="contact.html" class="btn btn-accent">Get In Touch</a>
+                            <a href="about.html" class="btn btn-secondary" style="color: white; border-color: white;">Learn About Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2025 CodeHive. All rights reserved.</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 CodeHive. All rights reserved. | Built with ❤️ using Material Design</p>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
