@@ -3,44 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to CodeHive</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>CodeHive - Building Robust Backends, One Line at a Time</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to CodeHive</h1>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">CodeHive</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
     </header>
+
     <main>
-        <p>This is a dummy single-page website hosted on GitHub Pages.</p>
-        <p>Stay tuned for more amazing content!</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>CodeHive</h1>
+                <p class="tagline">Building Robust Backends, One Line at a Time</p>
+                <a href="contact.html" class="btn btn-primary">Get Started</a>
+            </div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="container">
+            <div class="card">
+                <h2>Welcome to CodeHive</h2>
+                <p>We are a specialized backend development consultancy focused on creating scalable, robust, and efficient server-side solutions. Our expertise lies in Python and Golang, two of the most powerful languages for modern backend development.</p>
+                <p>Whether you need API development, database architecture, cloud integration, or performance optimization, we deliver solutions that grow with your business.</p>
+            </div>
+        </section>
+
+        <!-- Expertise Highlights -->
+        <section class="container">
+            <h2 class="text-center mb-2">Our Expertise</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Python Development</h3>
+                    <p>Leverage the power of Python for rapid development, data processing, and scalable web applications. We work with Django, FastAPI, Flask, and other cutting-edge frameworks.</p>
+                </div>
+                <div class="card">
+                    <h3>Golang Solutions</h3>
+                    <p>Build high-performance, concurrent applications with Go. Perfect for microservices, APIs, and systems programming that demand speed and reliability.</p>
+                </div>
+                <div class="card">
+                    <h3>Cloud & DevOps</h3>
+                    <p>Deploy and scale your applications with confidence using modern cloud platforms and DevOps practices. We ensure your backend is production-ready.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="container section">
+            <div class="card">
+                <h2>Why Choose CodeHive?</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🚀 Performance First</h3>
+                        <p>We optimize every line of code for maximum performance and scalability.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🔒 Security Focused</h3>
+                        <p>Your data and applications are protected with industry-best security practices.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📈 Scalable Solutions</h3>
+                        <p>Our backends grow with your business, handling increased load seamlessly.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⚡ Rapid Development</h3>
+                        <p>Get to market faster with our efficient development processes and proven methodologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
-        <p>&copy; 2025 CodeHive. All rights reserved.</p>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CodeHive. All rights reserved. Building the future, one backend at a time.</p>
+        </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
