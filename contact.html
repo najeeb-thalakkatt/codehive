@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CodeHive</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">CodeHive</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h1>Get In Touch</h1>
+                <p class="tagline">Ready to Build Something Amazing Together?</p>
+            </div>
+        </section>
+
+        <!-- Contact Form and Info -->
+        <section class="container">
+            <div class="card-grid">
+                <!-- Contact Form -->
+                <div class="card">
+                    <h2>Send Us a Message</h2>
+                    <p>Ready to discuss your backend needs? Fill out the form below and we'll get back to you within 24 hours.</p>
+                    
+                    <form id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company/Organization</label>
+                            <input type="text" id="company" name="company" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option value="">Please select a subject</option>
+                                <option value="api-development">API Development</option>
+                                <option value="database-design">Database Design</option>
+                                <option value="cloud-integration">Cloud Integration</option>
+                                <option value="performance-optimization">Performance Optimization</option>
+                                <option value="microservices">Microservices Architecture</option>
+                                <option value="consultation">General Consultation</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="budget" class="form-label">Project Budget Range</label>
+                            <select id="budget" name="budget" class="form-input">
+                                <option value="">Select budget range (optional)</option>
+                                <option value="under-5k">Under $5,000</option>
+                                <option value="5k-15k">$5,000 - $15,000</option>
+                                <option value="15k-50k">$15,000 - $50,000</option>
+                                <option value="50k-plus">$50,000+</option>
+                                <option value="ongoing">Ongoing/Retainer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="timeline" class="form-label">Project Timeline</label>
+                            <select id="timeline" name="timeline" class="form-input">
+                                <option value="">Select timeline (optional)</option>
+                                <option value="urgent">ASAP (Rush job)</option>
+                                <option value="1-month">Within 1 month</option>
+                                <option value="1-3-months">1-3 months</option>
+                                <option value="3-6-months">3-6 months</option>
+                                <option value="6-plus-months">6+ months</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details *</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" required placeholder="Tell us about your project, technical requirements, current challenges, or any specific questions you have. The more details you provide, the better we can help you."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="card">
+                    <h2>Contact Information</h2>
+                    <p>Prefer to reach out directly? Here are the best ways to get in touch with us.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <h3>📧 Email</h3>
+                            <p><a href="mailto:hello@codehive.dev" style="color: #1976d2;">hello@codehive.dev</a></p>
+                            <p style="font-size: 0.875rem; color: #757575;">We typically respond within 24 hours</p>
+                        </div>
+                        
+                        <div class="contact-item mt-2">
+                            <h3>📱 Phone</h3>
+                            <p><a href="tel:+1234567890" style="color: #1976d2;">+1 (234) 567-8900</a></p>
+                            <p style="font-size: 0.875rem; color: #757575;">Available Monday-Friday, 9 AM - 6 PM EST</p>
+                        </div>
+                        
+                        <div class="contact-item mt-2">
+                            <h3>💬 LinkedIn</h3>
+                            <p><a href="https://linkedin.com/company/codehive" target="_blank" style="color: #1976d2;">linkedin.com/company/codehive</a></p>
+                            <p style="font-size: 0.875rem; color: #757575;">Connect with us professionally</p>
+                        </div>
+                        
+                        <div class="contact-item mt-2">
+                            <h3>🐙 GitHub</h3>
+                            <p><a href="https://github.com/codehive-dev" target="_blank" style="color: #1976d2;">github.com/codehive-dev</a></p>
+                            <p style="font-size: 0.875rem; color: #757575;">Check out our open source contributions</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="container section">
+            <div class="card">
+                <h2>Frequently Asked Questions</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>❓ How quickly can you start?</h3>
+                        <p>We typically begin new projects within 1-2 weeks, depending on our current workload and your project requirements. Rush jobs can often be accommodated with appropriate planning.</p>
+                    </div>
+                    <div class="card">
+                        <h3>💰 How do you price projects?</h3>
+                        <p>We offer both fixed-price projects and hourly consulting. Pricing depends on scope, complexity, and timeline. We provide detailed estimates after our initial consultation.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🔄 Do you provide ongoing support?</h3>
+                        <p>Yes! We offer maintenance packages and retainer agreements for ongoing support, updates, and monitoring of the systems we build.</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌍 Do you work remotely?</h3>
+                        <p>Absolutely! We work with clients globally and are experienced in remote collaboration. We're available for video calls during overlapping business hours.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Hours -->
+        <section class="container">
+            <div class="card text-center">
+                <h2>Office Hours</h2>
+                <p>We're available for calls and meetings during these hours:</p>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>🌍 EST/EDT</h3>
+                        <p>Monday - Friday<br>9:00 AM - 6:00 PM</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌏 PST/PDT</h3>
+                        <p>Monday - Friday<br>6:00 AM - 3:00 PM</p>
+                    </div>
+                    <div class="card">
+                        <h3>🌍 GMT/BST</h3>
+                        <p>Monday - Friday<br>2:00 PM - 11:00 PM</p>
+                    </div>
+                </div>
+                <p style="margin-top: 1rem; color: #757575;">Outside these hours? Send us an email and we'll get back to you during our next business day.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CodeHive. All rights reserved. Building the future, one backend at a time.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
