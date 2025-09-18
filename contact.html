@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CodeHive Backend Development</title>
+    <meta name="description" content="Get in touch with CodeHive for your Python and Golang backend development needs. Contact us for consultation and project inquiries.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">CodeHive</div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="services.html">Services</a></li>
+                    <li class="nav-item"><a href="about.html">About</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Get In Touch</h1>
+            <p class="subtitle">Let's discuss your backend development needs</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Contact Form Section -->
+        <section class="section">
+            <div class="container">
+                <div class="grid grid-2">
+                    <!-- Contact Form -->
+                    <div>
+                        <h2>Send Us a Message</h2>
+                        <p style="margin-bottom: 2rem;">
+                            Ready to start your project? Fill out the form below and we'll get back to you within 24 hours.
+                        </p>
+                        
+                        <form id="contactForm" class="contact-form" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="name" 
+                                    name="name" 
+                                    class="form-input" 
+                                    required 
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input 
+                                    type="email" 
+                                    id="email" 
+                                    name="email" 
+                                    class="form-input" 
+                                    required 
+                                    placeholder="Enter your email address"
+                                    autocomplete="email"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input 
+                                    type="tel" 
+                                    id="phone" 
+                                    name="phone" 
+                                    class="form-input" 
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">Company/Organization</label>
+                                <input 
+                                    type="text" 
+                                    id="company" 
+                                    name="company" 
+                                    class="form-input" 
+                                    placeholder="Enter your company name"
+                                    autocomplete="organization"
+                                >
+                            </div>
+
+                            <div class="form-group">
+                                <label for="project-type" class="form-label">Project Type</label>
+                                <select id="project-type" name="project-type" class="form-select">
+                                    <option value="">Select project type</option>
+                                    <option value="api-development">API Development</option>
+                                    <option value="database-design">Database Design</option>
+                                    <option value="cloud-integration">Cloud Integration</option>
+                                    <option value="microservices">Microservices Architecture</option>
+                                    <option value="performance-optimization">Performance Optimization</option>
+                                    <option value="consultation">Technical Consultation</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="budget" class="form-label">Project Budget</label>
+                                <select id="budget" name="budget" class="form-select">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-5k">Under $5,000</option>
+                                    <option value="5k-15k">$5,000 - $15,000</option>
+                                    <option value="15k-50k">$15,000 - $50,000</option>
+                                    <option value="50k-plus">$50,000+</option>
+                                    <option value="discuss">Let's discuss</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="timeline" class="form-label">Project Timeline</label>
+                                <select id="timeline" name="timeline" class="form-select">
+                                    <option value="">Select timeline</option>
+                                    <option value="asap">ASAP</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-plus-months">3+ months</option>
+                                    <option value="flexible">Flexible</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message" class="form-label">Project Description *</label>
+                                <textarea 
+                                    id="message" 
+                                    name="message" 
+                                    class="form-textarea" 
+                                    required 
+                                    placeholder="Please describe your project requirements, technical challenges, and any specific questions you have..."
+                                    rows="6"
+                                ></textarea>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Contact Information -->
+                    <div>
+                        <h2>Contact Information</h2>
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <h3 class="card-title">Get Direct Support</h3>
+                            <div style="margin-top: 1rem;">
+                                <p style="margin-bottom: 1rem;">
+                                    <strong style="color: var(--primary-color);">Email:</strong><br>
+                                    <a href="mailto:hello@codehive.dev">hello@codehive.dev</a>
+                                </p>
+                                <p style="margin-bottom: 1rem;">
+                                    <strong style="color: var(--primary-color);">Phone:</strong><br>
+                                    <a href="tel:+1-555-CODE-HIVE">+1 (555) CODE-HIVE</a>
+                                </p>
+                                <p style="margin-bottom: 1rem;">
+                                    <strong style="color: var(--primary-color);">Business Hours:</strong><br>
+                                    Monday - Friday: 9:00 AM - 6:00 PM EST<br>
+                                    Weekend: By appointment
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <h3 class="card-title">Response Time</h3>
+                            <p class="card-content">
+                                We typically respond to all inquiries within 24 hours during business days. 
+                                For urgent matters, please call us directly or mention "URGENT" in your message subject.
+                            </p>
+                        </div>
+
+                        <div class="card">
+                            <h3 class="card-title">What Happens Next?</h3>
+                            <ol style="text-align: left; color: var(--text-secondary); padding-left: 1.5rem;">
+                                <li style="margin-bottom: 0.5rem;">We'll review your project requirements</li>
+                                <li style="margin-bottom: 0.5rem;">Schedule a consultation call (usually within 2-3 business days)</li>
+                                <li style="margin-bottom: 0.5rem;">Provide a detailed project proposal with timeline and pricing</li>
+                                <li>Start building your solution upon agreement</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h4 class="card-title">What information do you need to get started?</h4>
+                        <p class="card-content">
+                            We need to understand your project goals, technical requirements, timeline, 
+                            and budget. The more details you provide, the better we can tailor our proposal.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">Do you offer free consultations?</h4>
+                        <p class="card-content">
+                            Yes! We offer a free 30-minute consultation to discuss your project and 
+                            determine if we're a good fit for your needs.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">What is your typical project timeline?</h4>
+                        <p class="card-content">
+                            Project timelines vary based on complexity, but most projects range from 
+                            4-16 weeks. We'll provide a detailed timeline in our proposal.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h4 class="card-title">Do you provide ongoing support?</h4>
+                        <p class="card-content">
+                            Absolutely! We offer various support packages including bug fixes, 
+                            feature additions, performance monitoring, and system maintenance.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alternative Contact Methods -->
+        <section class="section">
+            <div class="container">
+                <h2 class="section-title">Other Ways to Connect</h2>
+                <div class="grid grid-3">
+                    <div class="card text-center">
+                        <h4 class="card-title">LinkedIn</h4>
+                        <p class="card-content">
+                            Connect with us professionally and stay updated on our latest projects and insights.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Connect on LinkedIn</a>
+                    </div>
+                    <div class="card text-center">
+                        <h4 class="card-title">GitHub</h4>
+                        <p class="card-content">
+                            Check out our open source contributions and code samples to see our work quality.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">View GitHub Profile</a>
+                    </div>
+                    <div class="card text-center">
+                        <h4 class="card-title">Schedule a Call</h4>
+                        <p class="card-content">
+                            Prefer to talk directly? Schedule a convenient time for a phone or video consultation.
+                        </p>
+                        <a href="#" class="btn btn-outline" style="margin-top: 1rem;">Book a Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 CodeHive. All rights reserved. Building robust backends with Python and Golang.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
