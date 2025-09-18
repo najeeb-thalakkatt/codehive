@@ -3,44 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to CodeHive</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background-color: #0078d7;
-            color: white;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>CodeHive - Building Robust Backends, One Line at a Time</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to CodeHive</h1>
-    </header>
-    <main>
-        <p>This is a dummy single-page website hosted on GitHub Pages.</p>
-        <p>Stay tuned for more amazing content!</p>
-    </main>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">CodeHive</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>CodeHive</h1>
+        <p class="tagline">Building Robust Backends, One Line at a Time</p>
+        <p class="intro">
+            Welcome to CodeHive, your trusted partner in backend development excellence. 
+            We specialize in creating scalable, efficient, and robust backend solutions 
+            using Python and Golang, empowering businesses to thrive in the digital landscape.
+        </p>
+        <div>
+            <a href="services.html" class="btn">Our Services</a>
+            <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section class="section">
+        <h2>Our Expertise</h2>
+        <div class="expertise">
+            <div class="expertise-card">
+                <h3>🐍 Python Development</h3>
+                <p>Leverage the power of Python for rapid development, data processing, and machine learning integration. From Django to FastAPI, we build scalable web applications and APIs.</p>
+            </div>
+            <div class="expertise-card">
+                <h3>🚀 Golang Solutions</h3>
+                <p>Harness Go's performance and simplicity for high-throughput systems, microservices, and cloud-native applications. Perfect for concurrent processing and system programming.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose CodeHive -->
+    <section class="section">
+        <h2>Why Choose CodeHive?</h2>
+        <div class="expertise">
+            <div class="expertise-card">
+                <h3>⚡ Performance First</h3>
+                <p>We optimize every line of code for maximum performance, ensuring your applications run smoothly under any load.</p>
+            </div>
+            <div class="expertise-card">
+                <h3>🔒 Security Focused</h3>
+                <p>Security is built into every solution we create, following industry best practices and compliance standards.</p>
+            </div>
+            <div class="expertise-card">
+                <h3>📈 Scalable Architecture</h3>
+                <p>Our solutions grow with your business, designed with scalability and maintainability as core principles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 CodeHive. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" title="LinkedIn">LinkedIn</a>
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="Twitter">Twitter</a>
+            </div>
+            <p>&copy; 2025 CodeHive. All rights reserved. Building the future, one backend at a time.</p>
+        </div>
     </footer>
 </body>
 </html>

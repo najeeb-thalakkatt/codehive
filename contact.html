@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - CodeHive Backend Development</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">CodeHive</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="hero">
+        <h1>Get In Touch</h1>
+        <p class="tagline">Let's Build Something Amazing Together</p>
+        <p class="intro">
+            Ready to take your backend infrastructure to the next level? We'd love to hear about 
+            your project and discuss how CodeHive can help you achieve your goals.
+        </p>
+    </section>
+
+    <!-- Contact Form and Info -->
+    <section class="section">
+        <h2>Start the Conversation</h2>
+        
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company/Organization</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                
+                <div class="form-group">
+                    <label for="project">Project Type</label>
+                    <select id="project" name="project" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                        <option value="">Select a project type</option>
+                        <option value="api">API Development</option>
+                        <option value="database">Database Design</option>
+                        <option value="cloud">Cloud Integration</option>
+                        <option value="microservices">Microservices Architecture</option>
+                        <option value="optimization">Performance Optimization</option>
+                        <option value="consultation">Technical Consultation</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="budget">Project Budget Range</label>
+                    <select id="budget" name="budget" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                        <option value="">Select budget range</option>
+                        <option value="5k-15k">$5,000 - $15,000</option>
+                        <option value="15k-30k">$15,000 - $30,000</option>
+                        <option value="30k-50k">$30,000 - $50,000</option>
+                        <option value="50k+">$50,000+</option>
+                        <option value="discussion">Prefer to discuss</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="timeline">Project Timeline</label>
+                    <select id="timeline" name="timeline" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 5px; font-size: 1rem;">
+                        <option value="">Select timeline</option>
+                        <option value="urgent">ASAP (Rush project)</option>
+                        <option value="1-2months">1-2 months</option>
+                        <option value="3-6months">3-6 months</option>
+                        <option value="6months+">6+ months</option>
+                        <option value="flexible">Flexible</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Tell us about your project, technical requirements, current challenges, and what you're hoping to achieve..." required></textarea>
+                </div>
+                
+                <button type="submit" class="btn" style="width: 100%; margin-top: 1rem;">Send Message</button>
+            </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> hello@codehive.dev</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Response Time:</strong> We typically respond within 24 hours</p>
+            
+            <h3 style="margin-top: 2rem;">Office Hours</h3>
+            <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM (EST)</p>
+            <p><strong>Saturday:</strong> 10:00 AM - 2:00 PM (EST)</p>
+            <p><strong>Sunday:</strong> Closed</p>
+            
+            <h3 style="margin-top: 2rem;">Emergency Support</h3>
+            <p>For existing clients with critical issues, emergency support is available 24/7 via our dedicated hotline.</p>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <h2>Our Process</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>1. 📞 Initial Consultation</h3>
+                <p>We start with a detailed discussion about your project requirements, technical challenges, and business objectives. This helps us understand your needs completely.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>2. 📋 Proposal & Planning</h3>
+                <p>Based on our consultation, we provide a detailed proposal including project scope, timeline, technology stack, and pricing. We ensure everything is clear before we begin.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>3. 🚀 Development & Delivery</h3>
+                <p>We work in iterative cycles with regular updates and feedback sessions. You'll see progress at every step and have input throughout the development process.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>4. 🔧 Support & Maintenance</h3>
+                <p>After delivery, we provide ongoing support and maintenance options to ensure your backend systems continue to perform optimally as your business grows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <h2>Frequently Asked Questions</h2>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <div style="background: #f8f9fa; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; border-left: 4px solid #f39c12;">
+                <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">How quickly can you start a project?</h4>
+                <p style="margin: 0;">Depending on our current workload, we can typically start new projects within 1-2 weeks. For urgent projects, we may be able to accommodate faster timelines.</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; border-left: 4px solid #f39c12;">
+                <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Do you work with existing development teams?</h4>
+                <p style="margin: 0;">Absolutely! We often collaborate with in-house development teams, providing specialized backend expertise to complement their existing skills.</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; border-left: 4px solid #f39c12;">
+                <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">What's included in your support packages?</h4>
+                <p style="margin: 0;">Our support packages include bug fixes, performance monitoring, security updates, and technical consultation. We offer different tiers based on your needs.</p>
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; border-left: 4px solid #f39c12;">
+                <h4 style="color: #2c3e50; margin-bottom: 0.5rem;">Can you help with legacy system modernization?</h4>
+                <p style="margin: 0;">Yes, we specialize in modernizing legacy systems, whether it's migrating to new technologies, improving performance, or adding new features to existing applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#" title="LinkedIn">LinkedIn</a>
+                <a href="#" title="GitHub">GitHub</a>
+                <a href="#" title="Twitter">Twitter</a>
+            </div>
+            <p>&copy; 2025 CodeHive. All rights reserved. Building the future, one backend at a time.</p>
+        </div>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData);
+            
+            // Simple validation
+            if (!data.name || !data.email || !data.message) {
+                alert('Please fill in all required fields.');
+                return;
+            }
+            
+            // In a real application, you would send this data to a server
+            // For this demo, we'll just show a success message
+            alert(`Thank you for your message, ${data.name}! We'll get back to you within 24 hours.`);
+            
+            // Reset form
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
